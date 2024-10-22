@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anki Card Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
+        <h1 class="text-3xl font-bold mb-6 text-center">Anki Card Generator</h1>
+        <form id="topicForm" class="mb-6">
+            <select id="deckSelect" class="w-full p-2 border rounded mb-4">
+                <option value="">Select a deck</option>
+            </select>
+            <input type="text" id="topic" name="topic" placeholder="Enter a topic" class="w-full p-2 border rounded mb-4">
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Generate Cards</button>
+        </form>
+        <div id="cardsContainer" class="space-y-4"></div>
+        <button id="addToAnki" class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600 mt-6 hidden">Add to Anki</button>
+        <button id="viewDeckCards" class="w-full bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600 mt-4">View Deck Cards</button>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
